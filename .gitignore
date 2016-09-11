@@ -1,0 +1,4 @@
+java*.rpm
+jdk*
+after*.sh
+UnlimitedJCEPolicyJDK8
