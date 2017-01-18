@@ -3,6 +3,7 @@ MAJOR_VERSION=8
 MINOR_VERSION=121
 VERSION=$(shell echo $(MAJOR_VERSION)u$(MINOR_VERSION))
 PATCH=b13
+DOWNLOAD_HASH=e9e7ea248e2c4826b92b3f075a80e441
 EPOCH=1
 ITERATION=2
 PREFIX=/opt/java
@@ -35,6 +36,7 @@ package: clean
 	@ echo "MINOR_VERSION: $(MINOR_VERSION)"
 	@ echo "VERSION:       $(VERSION)"
 	@ echo "PATCH:         $(PATCH)"
+	@ echo "DOWNLOAD_HASH: $(DOWNLOAD_HASH)"
 	@ echo "ITERATION:     $(ITERATION)"
 	@ echo "PREFIX:        $(PREFIX)"
 	@ echo "LICENSE:       $(LICENSE)"
@@ -52,7 +54,7 @@ package: clean
 		--no-cookies \
 		--no-check-certificate \
 		--header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" \
-		"http://download.oracle.com/otn-pub/java/jdk/$(VERSION)-$(PATCH)/jdk-$(VERSION)-linux-x64.tar.gz" \
+		"http://download.oracle.com/otn-pub/java/jdk/$(VERSION)-$(PATCH)/$(DOWNLOAD_HASH)/jdk-$(VERSION)-linux-x64.tar.gz" \
 	;
 
 	# Download JDK cryptography extensions
