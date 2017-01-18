@@ -1,3 +1,7 @@
+* Tue Jan 17 2017 Ryan Parman <ryan@ryanparman.com> 8u121-1
+- Upgraded to Java 8, Update 121.
+- http://www.oracle.com/technetwork/java/javase/8u121-relnotes-3315208.html
+
 * Wed Oct 19 2016 Ryan Parman <ryan@ryanparman.com> 8u112-2
 - Upgraded to Java 8, Update 112.
 - http://www.oracle.com/technetwork/java/javase/8u112-relnotes-3124973.html
