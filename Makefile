@@ -4,8 +4,7 @@ MINOR_VERSION=121
 VERSION=$(shell echo $(MAJOR_VERSION)u$(MINOR_VERSION))
 PATCH=b13
 DOWNLOAD_HASH=e9e7ea248e2c4826b92b3f075a80e441
-EPOCH=1
-ITERATION=2
+ITERATION=1.lru
 PREFIX=/opt/java
 LICENSE="BSL"
 VENDOR="Oracle"
@@ -86,7 +85,6 @@ package: clean
 		-v $(VERSION) \
 		-C /tmp/installdir-$(NAME)-$(VERSION) \
 		-m $(MAINTAINER) \
-		--epoch $(EPOCH) \
 		--iteration $(ITERATION) \
 		--license $(LICENSE) \
 		--vendor $(VENDOR) \
