@@ -86,6 +86,7 @@ package: clean
 		-C /tmp/installdir-$(NAME)-$(VERSION) \
 		-m $(MAINTAINER) \
 		--iteration $(ITERATION) \
+		--epoch 1 \
 		--license $(LICENSE) \
 		--vendor $(VENDOR) \
 		--prefix $(PREFIX) \
